@@ -5,7 +5,7 @@
 https://sticky-notes-iota.vercel.app/
 
 ## Description
-This is a quick Javascript application that I am using to mimic the behavior of the Windows Sticky Note application. Notes are displayed on the page and also are persistent through using the browsers local storage.<br>
+This is a quick Javascript application that I am using to mimic the behavior of the Windows Sticky Note application. Notes are displayed on the page and also are persistent through using the browser's local storage.<br>
 
 ## Screenshot
 <img src="./screenshot1.JPG" alt="screenshot of application being used in browser"><br>
