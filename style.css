@@ -1,0 +1,116 @@
+/*? ===== RESETS AND CUSTON VARIABLES ===== */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--color1: white;
+	--color2: black;
+	--color3: #4bff4b;
+	--color4: red;
+	--bgColor: #222222ff;
+	--windowColor: #22222225;
+	--startNoteBG: #7c7c7c;
+	--noteBG: #f7e98d;
+	--width: 20rem;
+	--height: 20rem;
+}
+/*! ===== END RESETS AND DEFAULTS ===== */
+
+/*? ===== GLOBAL STYLING ===== */
+body {
+	background-color: #222222dd;
+	line-height: 1.5;
+}
+h1 {
+	text-align: center;
+	padding: 0.5rem;
+	color: var(--color1);
+}
+main {
+	height: 100%;
+	width: 100%;
+}
+.hidden {
+	display: none;
+}
+/*! ===== END GLOBAL STYLING ===== */
+
+/*? ===== NOTES STYLING ===== */
+.container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+#start,
+.note {
+	position: relative;
+	width: var(--width);
+	height: var(--height);
+	padding: 1rem;
+}
+#start {
+	display: grid;
+	grid-template-rows: 0.1fr 0.85fr;
+	background-color: var(--startNoteBG);
+	color: var(--color1);
+	gap: 1rem;
+}
+.startTitle,
+.startText {
+	width: 100%;
+	background-color: var(--windowColor);
+	border: 1px inset var(--color2);
+	padding: 0.25rem;
+	color: var(--color1);
+}
+.startTitle {
+	font-size: 1rem;
+}
+.startText {
+	font-size: 1rem;
+	resize: none;
+}
+.note {
+	background-color: var(--noteBG);
+	color: var(--color2);
+}
+/*! ===== END NOTES STYLING ===== */
+
+/*? ===== BUTTON STYLING ===== */
+.addNoteBtn,
+.deleteNoteBtn {
+	position: absolute;
+	font-size: 0.75rem;
+	bottom: 1rem;
+	right: 1rem;
+	padding: 0.25rem;
+	border-radius: 10px;
+	border: 2px solid var(--color2);
+}
+.addNoteBtn {
+	background-color: var(--color3);
+	color: var(--color2);
+}
+.addNoteBtn:active {
+	background-color: var(--color2);
+	color: var(--color3);
+	border: 2px solid var(--color3);
+}
+.deleteNoteBtn {
+	background-color: var(--color4);
+	color: var(--color1);
+}
+.deleteNoteBtn:active {
+	background-color: var(--color1);
+	color: var(--color4);
+	border: 2px solid var(--color4);
+}
+/*! ===== END BUTTON STYLING ===== */
