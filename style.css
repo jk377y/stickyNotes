@@ -30,7 +30,8 @@ h1 {
 	padding: 0.5rem;
 	color: var(--color1);
 }
-p, p.link {
+p,
+p.link {
 	text-align: center;
 	color: rgb(0, 162, 255);
 }
